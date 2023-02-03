@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>DojoWeather</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="top">
         <div class="nav">
             <h1>DojoWeather</h1>
             <ul class="links">
-                <li onclick="loading()"><a href="">Burbank</a></li>
-                <li onclick="loading()"><a href="">Chicago</a></li>
-                <li onclick="loading()"><a href="">Dallas</a></li>
+                <li onclick="loading()"><a href="#">Burbank</a></li>
+                <li onclick="loading()"><a href="#">Chicago</a></li>
+                <li onclick="loading()"><a href="#">Dallas</a></li>
             </ul>
         </div>
     </div>
-
-    <!-- Main container -->
     <div class="container">
-        <!-- Subtitle -->
         <div class="subtitle-line">
             <h2>San Jose</h2>
-            <form action="">
-                <label for="">Show temperature in </label>
-                <select name="temperature-scale" id="" onchange="convert(this)">
-                    <option value="">C</option>
-                    <option value="">F</option>
+            <form>
+                <label>Show temperature in </label>
+                <select name="temperature-scale" onchange="convert(this)">
+                    <option>°C</option>
+                    <option>°F</option>
                 </select>
             </form>
         </div>
-        <!-- Forecasts Row-->
         <div class="row">
             <div class="forecast">
                 <h1>Today</h1>
-                <img src="./img/some_rain.png" alt="rain">
+                <img src="assets/some_rain.png" alt="rain">
                 <p>some rain</p>
                 <p class="temperatures">
                     <span class="high" id="temp1">24</span>
@@ -48,49 +44,43 @@
             </div>
             <div class="forecast">
                 <h1>Tomorrow</h1>
-                <img src="./img/some_sun.png" alt="sun">
+                <img src="assets/some_sun.png" alt="sun">
                 <p>some sun</p>
                 <p class="temperatures">
-                    <span class="high" id="temp3">24</span>
-                    <span class="low" id="temp4">18</span>
+                    <span class="high" id="temp3">27</span>
+                    <span class="low" id="temp4">19</span>
                 </p>
             </div>
             <div class="forecast">
                 <h1>Friday</h1>
-                <img src="./img/some_clouds.png" alt="clouds">
-                <p>mostly cloudy</p>
+                <img src="assets/some_clouds.png" alt="clouds">
+                <p>some cloud</p>
                 <p class="temperatures">
-                    <span class="high" id="temp5">24</span>
-                    <span class="low" id="temp6">18</span>
+                    <span class="high" id="temp5">21</span>
+                    <span class="low" id="temp6">16</span>
                 </p>
             </div>
             <div class="forecast">
                 <h1>Saturday</h1>
-                <img src="./img/some_sun.png" alt="sun">
+                <img src="assets/some_sun.png" alt="sun">
                 <p>some sun</p>
                 <p class="temperatures">
-                    <span class="high" id="temp7">24</span>
-                    <span class="low" id="temp8">18</span>
+                    <span class="high" id="temp7">26</span>
+                    <span class="low" id="temp8">21</span>
                 </p>
             </div>
         </div>
     </div>
-    <!-- Footer section -->
     <div class="footer">
         <div class="cookie-policy">
-            <img src="./img/cookie.png" alt="">
-            <div class="cookie-text">
-                <h3>Stop! Cookie time</h3>
-                <p>We use cookies (sadly not the edible ones) to personalize content and ads, 
-                    to provide social media features and to analyze our site traffic.<a href="">Read More...</a></p>
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="text">
+                <h2>Stop! Cookie time.</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our site traffic. <a href="#">Read more...</a></p>
             </div>
             <button class="btn" onclick="accept()">Accept</button>
         </div>
     </div>
-
-
-
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

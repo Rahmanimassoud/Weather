@@ -1,77 +1,78 @@
-/* h1{
-    color: aqua;
-} */
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container .nav {
+.top {
+    background-color: #9fc5f8;
+    color: #fff;
+}
+
+/* this is left */
+.container, .nav {
     width: 1000px;
     margin: 0 auto;
 }
 
-.navbar {
-    background-color: aqua;
-    color: white;
-}
 .nav {
     display: flex;
+    height: 120px;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
     margin-bottom: 20px;
-    margin: 0 auto;
-}
-.nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    list-style: none;
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
+.nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
 .nav h1 {
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 
-/* Subtitle Line */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
 .subtitle-line {
     display: flex;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
     margin-bottom: 40px;
     border-bottom: 2px solid #999;
 }
 
 .subtitle-line h2 {
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
 .subtitle-line select, .subtitle-line label {
-    font-size: 15px;
+    font-size: 1.2rem;
     padding: 5px;
 }
 
-/* forecast Row */
-.row{
+.subtitle-line select {
+    width: 60px;
+}
+
+.row {
     display: flex;
 }
 
 .forecast {
     flex: 1;
     text-align: center;
-    background-color: #999;
+    background-color: #ddd;
     padding: 40px 0;
     margin-right: 20px;
 }
@@ -80,14 +81,14 @@ body {
     margin-right: 0;
 }
 
-.forecast p {
-    font-size: 20px;
-}
-
 .forecast img {
     border-radius: 50%;
     width: 156px;
     margin: 40px 0;
+}
+
+.forecast p {
+    font-size: 1.2rem;
 }
 
 .temperatures {
@@ -97,8 +98,8 @@ body {
 }
 
 .high, .low {
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .high::after, .low::after {
@@ -108,46 +109,46 @@ body {
 .high {
     color: #cf2a27;
 }
-.low{
+
+.low {
     color: #2b78e4;
 }
 
-/* Footer */
 .footer {
     width: 100%;
     position: absolute;
-    /* bottom: 3px; */
-    margin-top: 8px;
+    bottom: 10px;
 }
 
 .cookie-policy {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 1000px; */
+    box-sizing: border-box;
+    width: 1000px;
     height: 160px;
     padding: 20px;
     border: 2px solid #999;
     margin: 0 auto;
-    box-sizing: border-box;
-    
-}
-.cookie-text {
-    width: 80%;
-}
-.cookie-text h3 {
-    font-size: 25px;
-}
-.cookie-text p {
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn {
     padding: 10px 20px;
-    font-size: 20px;
-    border: 2px solid black;
-    box-shadow: 3px 3px 3px black;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
     background-color: #9fc5f8;
     cursor: pointer;
+}
 
+.text {
+    width: 70%;
+}
+
+.text h2 {
+    font-size: 1.8rem;
+}
+
+.text p {
+    font-size: 1.2rem;
 }
